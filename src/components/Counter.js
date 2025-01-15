@@ -1,9 +1,10 @@
-
-const Counter = ({firstComponent})=>{
-
+import { useContext } from "react";
+import AuthContext from "./contexts/authContext";
+const Counter = ()=>{
+const count = useContext(AuthContext)
     return (
-        firstComponent<5
-?<h2>{firstComponent}</h2>
+        count<5
+?<h2>{count}</h2>
 :null
     )
 }
