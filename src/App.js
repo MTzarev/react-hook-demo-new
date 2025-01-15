@@ -1,6 +1,7 @@
 import Counter from './components/Counter';
 import './App.css';
-import {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react';
+import CharacterList from './components/CharacterList';
 function App() {
   let [name, setName] = useState('');
   let [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
     <h1>{!name? 'Loading... ': name}</h1>
     
     <Counter firstComponent={count}/>
-   
+   <CharacterList/>
+
     <button onClick={clicker}>+</button>
     </div>
   );
