@@ -20,7 +20,7 @@ function App() {
     <div className="App">
     <h1>{!name? 'Loading... ': name}</h1>
     
-    <Counter firstComponent={count}/>
+    <Counter />
    <CharacterList/>
 
     <button onClick={clicker}>+</button>
