@@ -1,3 +1,4 @@
+import Counter from './components/Counter';
 import './App.css';
 import {useEffect, useState} from 'react'
 function App() {
@@ -13,7 +14,9 @@ function App() {
   return(
     <div className="App">
     <h1>{!name? 'Loading... ': name}</h1>
-    <h2>{count}</h2>
+    
+    <Counter firstComponent={count}/>
+   
     <button onClick={clicker}>+</button>
     </div>
   );
